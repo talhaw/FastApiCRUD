@@ -16,3 +16,10 @@ class UserCreate(UserBase):
 
 class UserRead(UserBase):
     id: UUID
+
+
+class UserUpdate(UserBase):
+    name: Optional[str] = None
+    email: Optional[str] = None
+    password: Optional[str] = None
+    is_active: Optional[bool] = None
